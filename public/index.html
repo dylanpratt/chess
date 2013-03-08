@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+    <script src="underscore.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="knockout-2.2.1.js"></script>
+
+    <title>Chess</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Chess</h1>
+    </div>
+
+    <div id="board" data-bind="foreach: tiles">
+        <div data-bind="style: {backgroundColor: color === 'white' ? 'white' : 'black'}, if: piece "class="tile">
+          <div class= "piece" data-bind="css: piece().type"><span class="text" data-bind="text: piece().type"></span></div>
+        </div>
+    </div>
+
+  </body>
+</html>

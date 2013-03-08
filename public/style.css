@@ -1,0 +1,91 @@
+
+body {
+  background-color: #ffffff;
+}
+
+div {
+  border: 1px dashed black;
+}
+
+#header {
+
+}
+
+h1 {
+  text-align: center;
+
+}
+
+#board {
+  width: 416px;
+  height: 416px;
+  margin: auto;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+#tile1 { 
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: #000000;
+}
+
+#tile2 { 
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: #ffffff;
+  margin-left: 70px;
+}
+
+.active {
+  background-color: pink !important;
+}
+
+.hover {
+  background-color: purple !important;
+}
+
+.piece {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  margin-top: 9px;
+  z-index: 1;
+}
+
+.rook {
+  background-color: red;
+}
+
+.queen {
+  background-color: pink;
+}
+
+.king {
+  background-color: blue;
+}
+
+.bishop{
+  background-color: rgb(29, 235, 243);
+}
+
+.knight{
+  background-color: rgb(0, 245, 20);
+}
+
+.pawn{
+  background-color: yellow;
+}
+
+.text {
+  font-size: 12px;
+}
